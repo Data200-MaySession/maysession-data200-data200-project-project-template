@@ -1,16 +1,14 @@
-# Project Title
-
-## Team Information
+# Pedicting House Price
 
 ### Team Name
-*Replace this with your team name*
+*Bangers*
 
 ### Team Members
-1. *Member 1 Name (GitHub Username)*
-2. *Member 2 Name (GitHub Username)*
-3. *Member 3 Name (GitHub Username)*
+1. *Ashwin Rijal (GitHub Username)*
+2. *Aayush Rijal (GitHub Username)*
+3. *Sashwat Adhikari (GitHub Username)*
 
 ### Task Division
-- **Member 1**: *Describe tasks assigned (e.g., data analysis and EDA)*
-- **Member 2**: *Describe tasks assigned (e.g., Model validation and creation)*
-- **Member 3**: *Describe tasks assigned (e.g., application development and data tasks)*
+- **Ashwin Rijal**: *Describe tasks assigned (e.g., data analysis and EDA)*
+- **Aayush Rijal**: *Describe tasks assigned (e.g., Model validation and creation)*
+- **Sashwat Adhikari**: *Describe tasks assigned (e.g., application development and data tasks)*
