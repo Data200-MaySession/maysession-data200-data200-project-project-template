@@ -1,88 +1,111 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Qfg2XI5Y)
 # Data 200 Applied Statistical Analysis  
 ## Project Work  
-**“Exploring Real-World Data through Statistical and Predictive Modeling”**
+**"Exploring Real-World Data through Statistical and Predictive Modeling"**
 
 ---
 
-### Objective:  
-Students will apply statistical and predictive modeling techniques to analyze a real-world dataset relevant to their areas of interest (e.g., Healthcare, Marketing, Sports, Finance, Education, etc.). The project will focus on:  
-- Cleaning and structuring data.  
-- Applying statistical analysis techniques such as Linear Regression, ANOVA, or Logistic Regression.  
-- Developing a simple end-to-end application.  
-- Generating a comprehensive report to document choices, insights, and conclusions.  
+## 🚀 Project Overview
+
+This repository contains the ongoing work for our DATA 200 Applied Statistical Analysis project. The primary objective is to apply statistical and predictive modeling techniques to a real-world dataset to extract meaningful insights and develop a simple end-to-end application. As of Week 4, we have completed initial data acquisition, comprehensive data cleaning, exploratory data analysis, and selection of statistical models.
 
 ---
 
-### Deliverables and Deadlines  
+## 👥 Team Information
 
-#### **Week 1: Group Formation and Topic Finalization**  
-- Form project groups.
-- Finalize the project topic.
-- Identify the problem statement.  
+### Team Name
+Utopia
 
-**Deliverables:**  
-- Idea presentation.  
+### Team Members
+1.  **Prashant Koirala** ([@prashantkoirala465](https://github.com/prashantkoirala465))
+2.  **Aaska Koirala** ([@AaskaKoirala27](https://github.com/AaskaKoirala27))
+3.  **Aishmita Yonzan** ([@xaishmitax](https://github.com/xaishmitax))
 
-#### **Week 2: Literature Review and Dataset Selection**  
-- Conduct a literature review to establish context and relevance.  
-- Select a suitable dataset.  
-
-**Deliverables:**  
-- Submit at least 3 literature reviews of related works.  
-
-#### **Week 3: Exploratory Data Analysis (EDA)**  
-- Perform EDA using descriptive statistics and visualizations to understand data patterns and relationships.  
-- Preprocess the data: Handle missing values, outliers, and duplicates, and perform other data wrangling techniques.  
-- Check relationships in data
-
-**Deliverables:**  
-- EDA summary with key insights supported by visualizations (e.g., scatter plots, histograms, box plots).  
-
-#### **Week 4: Statistical Model Selection and Hypothesis Development**  
-- Select appropriate statistical techniques (e.g., Regression, ANOVA, Logistic Regression) based on the problem statement.  
-- Perform feature selection and develop hypotheses.  
-
-**Deliverables:**  
-- A short slide deck with justification of model and feature choices.  
-
-#### **Week 5: Statistical Analysis and Validation**  
-- Conduct descriptive and inferential statistical analysis tests using Python.  
-- Perform diagnostics measures
-- Interpret results and validate hypotheses.  
-- If necessary, choose sampling methods or collect additional data (e.g., through questionnaires or Google Forms).  
-
----
-#### **Week 6: Statistical Modeling (Continued…)**  
-- Build on the analysis from Week 5.  
-- Finalize insights and begin compiling the project report.  
-
-**Deliverables:**  
-- Present statistical analysis results and insights.  
-- Also, present the report draft for progress tracking.  
-
-#### **Week 7: Application Development**  
-- Simple Python Application Creation for project demonstration using libraries of student’s choice.  
-
-**Deliverables:**  
-- Locally running Python application.  
-
-#### **Week 8: Peer Evaluation and Final Presentation**  
-- Conduct peer evaluations (review at least two projects).  
-- Prepare and present findings in a 10-minute presentation.  
-- Submit the final report with documentation.  
-
-**Deliverables:**  
-- Final report with detailed documentation.  
-- Presentation slides.  
-- Peer evaluation feedback.  
+### Task Division (Up to Week 4 Progress)
+*   **Prashant Koirala**: Data Collection, Initial Data Cleaning and Preprocessing, Feature Engineering (e.g., 'year', 'success' columns, genre/country extraction).
+*   **Aaska Koirala**: Exploratory Data Analysis (EDA) focusing on data patterns, relationships, handling missing values, outliers, and duplicates, and initial model selection.
+*   **Aishmita Yonzan**: Project Proposal and Mid-Defense Presentation preparation, documentation support, and ongoing data quality checks.
 
 ---
 
-### Evaluation Criteria  
-- **Dataset and Problem Definition (10%)**  
-- **Exploratory Data Analysis and Preprocessing (20%)**  
-- **Statistical Modeling and Validation (40%)**  
-- **Python Application Development (10%)**  
-- **Presentation and Collaboration (20%)**
+## 📊 Dataset
+
+**Name**: `moviesDb.csv`
+**Source**: This dataset is derived from the `tmdb_5000_movies.csv` dataset, originally retrieved from Kaggle.
+**Description**: The dataset contains various attributes of movies, including budget, revenue, runtime, genre, country, release date, and vote counts. It has been preprocessed to ensure data quality and suitability for statistical modeling, with additional features like 'year' and 'success' added during the cleaning phase.
+
+---
+
+## ⏰ Project Deliverables and Progress (Up to Week 4)
+
+We have diligently followed the project timeline and achieved the following milestones:
+
+### **Week 1: Group Formation and Topic Finalization**
+*   Formed our project group and finalized the topic: "Exploring Real-World Data through Statistical and Predictive Modeling" with a focus on movie data.
+*   Identified the problem statement related to movie success prediction and analysis.
+
+**Deliverables:**
+*   **Project Idea Presentation**: Our initial proposal outlining the project scope and objectives.
+    *   [`project-idea-presentation/Project-Proposal-Presentation.pdf`](project-idea-presentation/Project-Proposal-Presentation.pdf)
+
+### **Week 2: Literature Review and Dataset Selection**
+*   Conducted a literature review to establish context and relevance for movie data analysis.
+*   Selected the `tmdb_5000_movies.csv` dataset from Kaggle, which is then processed into `moviesDb.csv`.
+
+**Deliverables:**
+*   Submission of at least 3 literature reviews of related works (integrated into project understanding).
+
+### **Week 3: Exploratory Data Analysis (EDA) & Data Preprocessing**
+*   Performed extensive Exploratory Data Analysis (EDA) using descriptive statistics and visualizations. The code for this EDA, covering various visualizations and analysis steps as planned for Week 3, is available in `eda_analysis.py` or `visualization.ipynb` file.
+*   **Data Preprocessing**: Implemented robust data cleaning techniques as detailed in `data_cleaning.py`. This included:
+    *   Dropping duplicate entries.
+    *   Removing unusable entries based on `runtime`, `revenue`, `budget`, `adult`, `year`, and `vote_count` criteria.
+    *   Handling missing values by replacing null `certification_US` with 'NR' and null `genre` with 'None'.
+    *   Creating a `year` column from `release_date`.
+    *   Generating a `success` column (True if `revenue >= budget * 2`, False otherwise).
+    *   Extracting the first `genre` and `country` from their respective lists.
+    *   Filtering out countries with low frequency to ensure data quality.
+    *   Sorting data by `release_date`.
+    *   Removing redundant features like `original_title`, `release_date`, `adult`, `popularity`, `genres`, `status`, `production_companies`, and `production_countries`.
+
+**Deliverables:**
+*   EDA code script: [`eda_script.py`](eda_script.py) (Code for EDA, ready for notebook integration).
+*   Cleaned dataset: [`moviesDb.csv`](moviesDb.csv) generated by [`data_cleaning.py`](data_cleaning.py).
+
+### **Week 4: Statistical Model Selection and Detailed Hypothesis Testing**
+*   Selected appropriate statistical techniques based on the project problem statement (e.g., Hypothesis testing, Regression for predictive modeling).
+*   Developed and conducted detailed hypothesis tests regarding factors influencing movie success using `hypothesis_testing.py`. These tests include explicit null and alternative hypotheses, assumptions, test statistics, p-values, effect sizes (Cohen's d, Cramer's V), and detailed interpretations for the following relationships:
+    *   Budget vs. Success
+    *   Genre vs. Success (Top 15 Genres)
+    *   Vote Average vs. Success
+    *   Runtime vs. Success
+    *   Vote Count vs. Success
+    *   Certification (US) vs. Success
+    *   Country vs. Success (Top 10 Countries)
+*   Prepared the Mid-Defense Presentation.
+
+**Deliverables:**
+*   Detailed Hypothesis Testing script: [`hypothesis_testing.py`](hypothesis_testing.py)
+*   **Mid-Defense Presentation**: A slide deck justifying our model and feature choices.
+    *   [`project-idea-presentation/Mid-Defense-Presentation.pdf`](project-idea-presentation/Mid-Defense-Presentation.pdf)
+
+---
+
+## 📈 Future Work (Beyond Week 4)
+
+*   **Week 5: Statistical Analysis and Validation (Continued)**: Continue with further inferential statistical analysis, perform diagnostics on models, refine interpretations, and validate hypotheses more rigorously. Explore regression modeling.
+*   **Week 6: Statistical Modeling (Regression) & Report Compilation**: Build regression models for predictive analysis, finalize insights from all statistical analyses, and begin compiling the comprehensive project report.
+*   **Week 7: Application Development**: Create a simple Python application for project demonstration.
+*   **Week 8: Peer Evaluation and Final Presentation**: Conduct peer evaluations, prepare and present final findings, and submit the final report.
+
+---
+
+## 📏 Evaluation Criteria
+
+*   **Dataset and Problem Definition (10%)**
+*   **Exploratory Data Analysis and Preprocessing (20%)**
+*   **Statistical Modeling and Validation (40%)**
+*   **Python Application Development (10%)**
+*   **Presentation and Collaboration (20%)**
 
 ---
